@@ -1,17 +1,23 @@
-import React, {useState} from "react";
-import { View, Text, Image } from "react-native";
+import React from "react";
+import { View, Text, Image, StatusBar } from "react-native";
 import IllustrationImg from '../../assets/illustration.png';
 import {styles} from './styles';
-
+import { ButtonIcon } from "../../components/ButtonIcon";
 export function SignIn(){
-    const [text, setText] = useState('');
+    
 
     return(
         <View style={styles.container}>
+            <StatusBar 
+                barStyle = "light-content"
+                backgroundColor = "transparent"
+                translucent            
+            />
 
             <Image 
                 source = {IllustrationImg} 
                 style = {styles.image}
+                resizeMode = "stretch"
             />
 
             <View style = {styles.content}></View>
@@ -21,10 +27,13 @@ export function SignIn(){
                     facilmente
                 </Text>
                 
-                <Text>
+                <Text style = {styles.subtitle}>
                 Crie grupos para jogar seus games{`\n`}
                 favoritos com seus amigos
                 </Text>
+                <ButtonIcon></ButtonIcon>
+
+
         </View>
     );
 }
