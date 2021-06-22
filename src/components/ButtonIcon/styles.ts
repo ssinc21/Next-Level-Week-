@@ -10,21 +10,21 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center'
     },
-    title:{
-        flex:1,
+    title: {
+        flex: 1,
         color: theme.colors.heading,
         fontSize: 15,
-        textAlign:'center'
+        textAlign: 'center'
     },
-    iconWrapper:{
+    iconWrapper: {
         width: 56,
-        height:56,
-        justifyContent:'center',
-        alignItems:'center',
+        height: 56,
+        justifyContent: 'center',
+        alignItems: 'center',
         borderRightWidth: 1,
         borderColor: theme.colors.line
     },
-    icon:{
+    icon: {
         width: 24,
         height: 18
     }

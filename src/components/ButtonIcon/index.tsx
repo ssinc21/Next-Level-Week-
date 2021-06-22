@@ -8,19 +8,19 @@ import { styles } from './styles';
 type Props = TouchableOpacityProps & {
     title: string;
 }
-export function ButtonIcon({title, ...rest}:Props) {
+export function ButtonIcon({ title, ...rest }: Props) {
     return (
-        <TouchableOpacity 
-        style = {styles.container}
-        {...rest }
+        <TouchableOpacity
+            style={styles.container}
+            {...rest}
         >
 
-            <View 
-            style={styles.iconWrapper}
+            <View
+                style={styles.iconWrapper}
             >
-            <Image source = {DiscordImg} style = {styles.icon}/>
+                <Image source={DiscordImg} style={styles.icon} />
             </View>
-            <Text style = {styles.title}> {title} </Text>
+            <Text style={styles.title}> {title} </Text>
         </TouchableOpacity>
 
     );
